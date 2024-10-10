@@ -25,7 +25,7 @@ public class Test {
 		// TODO Auto-generated method stub
 		Dog d = new Dog();
         d.display();
-        d.addData(2000, "Rocky", "GR");
+        d.addData(2000, "Rockys", "GR");
         d.display();
 	}
 
