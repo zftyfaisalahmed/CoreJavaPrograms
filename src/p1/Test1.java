@@ -20,7 +20,7 @@ class Car {
 }
 
 public class Test1 {
-
+//InstanceVariable
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Car c = new Car();

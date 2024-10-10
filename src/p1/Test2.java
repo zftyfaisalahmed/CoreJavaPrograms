@@ -13,7 +13,7 @@ class Dog2 {
 }
 
 public class Test2 {
-
+//StaticVariable
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("Default Values by JVM: ");
