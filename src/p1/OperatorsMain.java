@@ -6,7 +6,7 @@ class Operation {
     void chooseOperator() {
         System.out.println("Operation : ");
         Scanner sc = new Scanner(System.in);
-        System.out.println("Select the opeartion to be performed : \n" + "1. Arthimetic\n" + "2. Relation\n");
+        System.out.println("Select the operation to be performed : \n" + "1. Arthimetic\n" + "2. Relation\n");
         int choose = sc.nextInt();
         // System.out.println("Enter the num 1");
         // int num1 = sc.nextInt();
