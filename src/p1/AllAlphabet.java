@@ -56,7 +56,7 @@ public class AllAlphabet {
 			System.out.print("     ");
             // E
             for (int j = 0; j < n; j++) {
-                if (i==0||j==0||i==(n/2)||i==(n-1)) {
+                if (i==0&&j!=0||j==0&&i!=0&&i!=n-1||i==(n/2)||i==(n-1)&&j!=0) {
                     System.out.print("# ");
                 } else {
                     System.out.print("  ");
@@ -66,7 +66,7 @@ public class AllAlphabet {
             
             // F
             for (int j = 0; j < n; j++) {
-                if (i==0||j==0||i==(n/2)) {
+                if (i==0&&j!=0||j==0&&i!=0||i==(n/2)) {
                     System.out.print("# ");
                 } else {
                     System.out.print("  ");
@@ -76,7 +76,7 @@ public class AllAlphabet {
             
             // G
             for (int j = 0; j < n; j++) {
-                if (i==0||j==0||i==(n-1)&&j<=n/2||j==n/2&&i>=n/2||i==n/2&&j>=n/2||j==n-1&&i>=n/2) {
+                if (i==0&&j!=0&&j!=n-1||j==0&&i!=0&&i!=n-1||i==(n-1)&&j<n/2&&j!=0||j==n/2&&i>n/2||i==n/2&&j>=6&&j<=9||j==n-1&&i>=6) {
                     System.out.print("# ");
                 } else {
                     System.out.print("  ");
@@ -126,7 +126,7 @@ public class AllAlphabet {
             
             // L
             for (int j = 0; j < n; j++) {
-                if (j==0||i==n-1) {
+                if (j==0&&i!=n-1||i==n-1&&j!=0) {
                     System.out.print("# ");
                 } else {
                     System.out.print("  ");
@@ -176,7 +176,7 @@ public class AllAlphabet {
             
             // Q
             for (int j = 0; j < n; j++) {
-                if (j==0&&i<=8||i==8&&j<=8||j==8&&i<=8||i==0&&j<=8||i==j&&i>=n/2) {
+                if (i==0&&j!=0&&j<8||j==0&&i!=0&&i<8||i==8&&j!=0&&j<=8||j==8&&i!=0&&i<=8||i==j&&i>=n/2) {
                     System.out.print("# ");
                 } else {
                     System.out.print("  ");
@@ -186,7 +186,7 @@ public class AllAlphabet {
             
             // R
             for (int j = 0; j < n; j++) {
-                if (j==0||i==0&&j<=n/2||j==n/2&&i<=n/2||i==n/2&&j<=n/2||i-j==n/2) {
+                if (j==0||i==0&&j<=n/2||j==n/2&&i!=0&&i<n/2||i==n/2&&j<=n/2||i-j==n/2) {
                     System.out.print("# ");
                 } else {
                     System.out.print("  ");
@@ -196,7 +196,7 @@ public class AllAlphabet {
             
             // S
             for (int j = 0; j < n; j++) {
-                if (i==0||j==0&&i<=n/2||i==n/2||j==n-1&&i>=n/2||i==n-1) {
+                if (i==0&&j!=0||j==0&&i!=0&&i<=4||i==n/2&&j!=0&&j!=n-1||j==n-1&&i>=6&&i<=9||i==n-1&&j!=n-1) {
                     System.out.print("# ");
                 } else {
                     System.out.print("  ");
