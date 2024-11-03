@@ -61,6 +61,7 @@ public class AllAlphabet {
                 } else {
                     System.out.print("  ");
                 }
+                		
             }
             System.out.print("     ");
             
